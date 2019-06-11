@@ -8,9 +8,9 @@
     "devserver": "live-server",
     "dev": "npm-run-all --parallel watch:sass devserver",
     "compile:sass": "node-sass-chokidar ./sass/main.scss ./css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ./css/style.comp.css -o ./css/style.prefix.css",
-    "compress:css": "node-sass ./css/style.prefix.css ./css/style.css --output-style compressed",
-    "clean:css": "rm ./css/style.comp.css ./css/style.prefix.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ./css/style.comp.css -o ./css/style.css",
+    "compress:css": "node-sass ./css/style.prefix.css ./css/style.min.css --output-style compressed",
+    "clean:css": "rm ./css/style.comp.css",
     "build:css": "npm-run-all compile:sass prefix:css compress:css clean:css"
   },
   "author": "Dicko Finus <dickofn@gmail.com>",
