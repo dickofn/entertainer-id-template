@@ -1,8 +1,10 @@
-@import "./bootstrap/bootstrap.scss";
 
 @import "./variables";
 @import "./base";
 @import "./components";
 @import "./layout";
 
+@import "./bootstrap/bootstrap.scss";
+
+@import "./header-footer/index";
 @import "./landing-page/index";

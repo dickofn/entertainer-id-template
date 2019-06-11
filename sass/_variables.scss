@@ -13,6 +13,11 @@ $color-grey-dark-1: #515456;
 $color-grey-light-1: #f2f5f9;
 $color-grey-light-2: #dedde0;
 
+// OVERRIDE BOOTSTRAP THEME --start
+$primary: $color-primary;
+$secondary: $color-secondary;
+// --end
+
 // FONT VARIABLES
 $font-title: "Josefin Sans", sans-serif;
 $font-text: "Quicksand", sans-serif;
