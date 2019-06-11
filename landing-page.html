@@ -4,21 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
     <link
-    href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Quicksand:400,500,700"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Quicksand:400,500,700"
+      rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <title>Entertainer - Landing Page</title>
   </head>
 
   <body>
-    asd
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-bg-transparent px-xl-5"
+      >
+        <a href="/" class="navbar-brand">
+          <img
+            src="./assets/img/logo.png"
+            class="img-fluid header-logo"
+            alt="logo"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-stretch"
+          id="navbarToggler"
+        >
+          <form class="mx-3 my-auto d-inline w-100">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-right-0"
+                placeholder="Search talent name or genre (e.g: Markus, Jazz)"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-primary border-left-0"
+                  type="button"
+                >
+                  GO
+                </button>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav font-weight-bold">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="introduction-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 mb-5">
+            <div class="container">
+              <div class="row align-items-center">
+                <div
+                  class="col-sm-12 col-md-6 col-lg-7 pb-5 pb-md-0 border-right introduction-img-container"
+                >
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/landing-1.png"
+                    alt="landing picture"
+                  />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5">
+                  <div class="row">
+                    <div class="col-md-auto pr-0 introduction-title">
+                      Who We Are
+                    </div>
+                    <div class="col px-0 introduction-line"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col introduction-desc">
+                      " Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Reprehenderit, labore. Temporibus, repellendus,
+                      perspiciatis eveniet fugiat quod et quae autem maiores,
+                      sit expedita doloribus corporis quas cum nesciunt sed
+                      deleniti impedit? "
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-5 order-2 order-md-1">
+                  <div class="row">
+                    <div class="col px-0 introduction-line"></div>
+                    <div class="col-md-auto pl-0 introduction-title">
+                      What We Do
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-right introduction-desc">
+                      " Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit. Reprehenderit, labore. Temporibus, repellendus,
+                      perspiciatis eveniet fugiat quod et quae autem maiores,
+                      sit expedita doloribus corporis quas cum nesciunt sed
+                      deleniti impedit? "
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-sm-12 col-md-6 col-lg-7 order-1 order-md-2 pb-5 pb-md-0 border-left introduction-img-container"
+                >
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/landing-2.png"
+                    alt="landing picture"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel-container">
+      <div
+        id="carouselCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.architecturaldigest.in/wp-content/uploads/2018/01/Farzi-cafe1.jpg" class="d-block w-100" alt="cafe 1" />
+            <div class="carousel-caption">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="http://www.lou.com.tr/galeri/1.jpg" class="d-block w-100" alt="cafe 2" />
+            <div class="carousel-caption">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="http://media2.s-nbcnews.com/i/MSNBC/Components/Video/__NEW/x_lon_parcafart_151204.jpg" class="d-block w-100" alt="cafe 3" />
+            <div class="carousel-caption">
+              <h5>Third slide label</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__line"></div>
+      <div class="footer__content">
+        <div class="footer__title">Footer</div>
+        <div class="footer__detail">
+          <div class="footer__detail--left">
+            Warner Bross Inc cabang Roxy Square
+            <br />Sebelah Disney Land <br />lorem@ipsum.dolor
+          </div>
+          <div class="footer__detail--right">Warner Bross Inc &copy;</div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

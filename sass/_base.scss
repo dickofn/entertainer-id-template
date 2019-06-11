@@ -12,3 +12,11 @@
 html {
   box-sizing: border-box;
 }
+
+body {
+  padding-top: 86px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 66px;
+  }
+}
