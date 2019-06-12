@@ -13,7 +13,7 @@ html {
   box-sizing: border-box;
 }
 
-body {
+body.body-with-header {
   padding-top: 86px;
 
   @include media-breakpoint-down(sm) {
