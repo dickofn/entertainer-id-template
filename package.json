@@ -1,7 +1,7 @@
 {
-  "name": "trillo",
+  "name": "Entertainer Template",
   "version": "1.0.0",
-  "description": "Landing Page for Trillo",
+  "description": "Template for Entertainer",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass-chokidar ./sass/main.scss ./css/style.css --watch --recursive --usePolling",
