@@ -1,0 +1,126 @@
+.profile {
+  .profile-header {
+    .header-container {
+      position: relative;
+
+      .cover-picture {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .header-desc {
+        position: absolute;
+        top: 86px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-down(sm) {
+          top: 66px;
+        }
+
+        .profile-picture {
+          border-radius: 100%;
+          width: 200px;
+          height: 200px;
+          margin-bottom: 50px;
+        }
+
+        .profile-name {
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+          font-size: 24px;
+          color: $color-secondary;
+          background-image: linear-gradient(
+            90deg,
+            rgba(#fff, 0.05),
+            rgba(#fff, 0.9),
+            rgba(#fff, 0.05)
+          );
+        }
+      }
+    }
+  }
+
+  .genres-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    .genres-title {
+      color: $color-grey-dark-1;
+    }
+
+    .genres {
+      .genre-item {
+        background-color: $color-grey-light-1;
+        color: $color-secondary;
+        padding: 10px 20px;
+        margin: 2px;
+      }
+    }
+  }
+}
+
+.social-book-container {
+  margin-bottom: 30px;
+
+  .social-container {
+    display: flex;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    .social-item {
+      font-size: 30px;
+      background-color: $color-primary;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--facebook{
+        background-color: #3b5998;
+      }
+      &--twitter{
+        background-color: #00acee;
+      }
+      &--instagram{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      }
+    }
+  }
+
+  .book-container {
+    .btn {
+      color: #fff;
+      border-radius: 30px;
+    }
+  }
+}
+
+.schedule-partner-container {
+  .card-title {
+    color: $color-secondary;
+  }
+
+  .schedule-container {
+  }
+}
