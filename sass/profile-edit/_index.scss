@@ -1,0 +1,17 @@
+.profile-edit {
+  .preview-img {
+    display: flex;
+    justify-content: center;
+    
+    img{
+      width: 100%;
+      border-radius: 100%;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .tag {
+    color: $color-primary;
+  }
+}
