@@ -132,16 +132,26 @@
 .schedule-partner-container {
   margin-bottom: 50px;
 
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+
+  .card-deck {
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
   .card-title {
     color: $color-secondary;
   }
 
   .schedule-container {
     @include media-breakpoint-down(md) {
-      margin-bottom: -1px;
+      margin-bottom: -1px !important;
     }
 
-    .card.border {
+    &.card.border {
       @include media-breakpoint-down(md) {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -150,7 +160,7 @@
   }
 
   .partner-container {
-    .card.border {
+    &.card.border {
       @include media-breakpoint-down(md) {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
