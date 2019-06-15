@@ -140,6 +140,10 @@
     @include media-breakpoint-down(md) {
       flex-direction: column;
     }
+
+    .card {
+      max-height: 500px;
+    }
   }
 
   .card-title {
@@ -164,6 +168,17 @@
       @include media-breakpoint-down(md) {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+      }
+    }
+
+    .talent-card {
+      .header-img{
+        height: 120px;
+        width: 120px;
+      }
+
+      .header-stars{
+        font-size: 20px;
       }
     }
   }
@@ -273,4 +288,5 @@
       }
     }
   }
+  
 }

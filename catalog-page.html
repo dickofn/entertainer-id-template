@@ -13,7 +13,7 @@
 
     <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
 
-    <title>Entertainer - Landing Page</title>
+    <title>Entertainer - Catalog</title>
   </head>
 
   <body class="body-with-header">
@@ -90,7 +90,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="http://www.kingcompanyband.com/wp-content/uploads/2018/11/Ilkka_WEB.jpg"
+              src="https://www.jamesharrisonmusician.com/wp-content/uploads/2018/02/2.jpg"
               class="d-block w-100"
               alt="ad banner"
             />
@@ -141,7 +141,7 @@
               aria-expanded="false"
               aria-controls="collapseFilter"
             >
-              Advanced Filter 
+              Advanced Filter
             </a>
           </div>
         </div>
@@ -150,7 +150,7 @@
       <div class="collapse" id="collapseFilter">
         <div class="container filter-container">
           <div class="row">
-            <div class="col-md-auto filter-header-container">
+            <div class="col-md-auto filter-header-container px-0">
               <div class="filter-header">
                 <div class="filter-header--title">Filter</div>
                 <div class="filter-header--separator">
@@ -165,6 +165,21 @@
             <div class="col filter-content-container">
               <form>
                 <div class="form-group row">
+                  <label for="inputCategory" class="col-sm-2 col-form-label"
+                    >Categories</label
+                  >
+                  <div class="col-sm-10">
+                    <select class="form-control" id="inputCategory">
+                      <option value="" disabled selected
+                        >Talent Category</option
+                      >
+                      <option value="music">Musician</option>
+                      <option value="mc">MC</option>
+                      <option value="dj">DJ</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
                   <label for="inputArea" class="col-sm-2 col-form-label"
                     >Area</label
                   >
@@ -177,12 +192,649 @@
                     />
                   </div>
                 </div>
+                <div class="form-group row align-items-center">
+                  <label for="inputAge" class="col-sm-2 col-form-label"
+                    >Age</label
+                  >
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-2">
+                        <span class="slider-value" id="ageSliderLowVal"
+                          >17</span
+                        >
+                      </div>
+                      <div class="col-8">
+                        <input
+                          id="ageSlider"
+                          type="text"
+                          class="ageSlider"
+                          value=""
+                          data-slider-min="0"
+                          data-slider-max="50"
+                          data-slider-step="1"
+                          data-slider-value="[17,28]"
+                        />
+                      </div>
+                      <div class="col-2">
+                        <span class="slider-value" id="ageSliderHighVal"
+                          >28</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-12 text-center text-lg-right">
+                    <button type="submit" class="btn btn-outline-primary">
+                      Filter
+                    </button>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-      
+
+      <div class="container catalog-container">
+        <div class="row">
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://alchetron.com/cdn/csar-lpez-musician-451354b0-4d40-456d-8bcb-939d0867fa6-resize-750.jpeg"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://pbs.twimg.com/profile_images/3224581772/e26eb5e83757cb5a9a3a1ecdec76f797.jpeg"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/27773/square_thumb%402x.jpg"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://cdn130.picsart.com/257909101016202.png?c256x256"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://weddingsbysantiago.com/wp-content/uploads/2017/10/Max-Weinburg-256.jpg"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://weddingsbysantiago.com/wp-content/uploads/2017/10/Kevin-Eubans-256.jpg"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://weddingsbysantiago.com/wp-content/uploads/2017/10/Doc-Serverinsen-256.jpg"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="talent-card">
+              <div class="talent-card-header">
+                <img
+                  src="https://weddingsbysantiago.com/wp-content/uploads/2017/10/Paul-Shaffer-256.jpg"
+                  alt="profile picture"
+                  class="header-img"
+                />
+                <div class="header-stars">
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--filled"
+                    >&#9733;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                  <span class="header-star header-star--empty"
+                    >&#9734;</span
+                  >
+                </div>
+              </div>
+              <div class="talent-card-body">
+                <div class="body-actions">
+                  <div class="action-btn action-btn--chat">
+                    <img
+                      class="action-icon action-icon--chat"
+                      src="./assets/img/btn_chat.png"
+                      alt="chat"
+                      title="Chat"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--bookmark">
+                    <img
+                      class="action-icon action-icon--bookmark"
+                      src="./assets/img/btn_bookmark.png"
+                      alt="bookmark"
+                      title="Bookmark"
+                    />
+                  </div>
+                  <div class="action-btn action-btn--schedule">
+                    <img
+                      class="action-icon action-icon--schedule"
+                      src="./assets/img/btn_schedule.png"
+                      alt="schedule"
+                      title="Book Now"
+                    />
+                  </div>
+                </div>
+                <div class="talent-name">Talent 1</div>
+                <div class="talent-category">Musician</div>
+                <div class="body-btn">
+                  <button
+                    class="btn btn-secondary card-button"
+                  >
+                    See Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
@@ -214,5 +866,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/bootstrap-slider.js"></script>
+    <script src="./js/profile/index.js"></script>
   </body>
 </html>

@@ -1,13 +1,13 @@
 .catalog {
   .catalog-banner {
     .carousel-inner {
-      max-height: 700px;
+      max-height: 500px;
 
       .carousel-item {
-        max-height: 700px;
+        max-height: 500px;
 
         img {
-          max-height: 700px;
+          max-height: 500px;
           object-fit: cover;
           object-position: center;
         }
@@ -16,7 +16,7 @@
   }
 
   .filter-collapse {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
 
     .btn {
@@ -29,9 +29,15 @@
     border-right: 1px solid $color-grey-light-2;
     border-left: 1px solid $color-grey-light-2;
 
+    @include media-breakpoint-down(lg) {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
     .filter-header-container {
       .filter-header {
-        padding: 30px;
+        padding: 20px;
         border-right: 1px solid $color-grey-light-2;
 
         display: flex;
@@ -71,6 +77,42 @@
       .col-form-label {
         color: $color-primary;
       }
+
+      form {
+        .slider-value {
+          color: $color-primary;
+        }
+
+        #ageSlider {
+          width: 100%;
+
+          .slider-track {
+            background: $color-grey-light-1;
+          }
+          .slider-selection {
+            background: $color-grey-light-1;
+          }
+          .slider-track-low {
+            background: $color-grey-light-1;
+          }
+          .slider-track-high {
+            background: $color-grey-light-1;
+          }
+
+          .slider-handle {
+            background-image: none;
+            background-color: $color-primary;
+          }
+        }
+
+        .btn {
+          min-width: 200px;
+          border-radius: 30px;
+        }
+      }
     }
+  }
+
+  .catalog-container {
   }
 }
