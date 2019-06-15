@@ -1,10 +1,10 @@
 @import "./variables";
-@import "./bootstrap/bootstrap.scss";
-@import "./font-awesome/fontawesome.scss";
-@import "./font-awesome/brands.scss";
-@import "./font-awesome/regular.scss";
-@import "./font-awesome/solid.scss";
-@import "./bootstrap-slider/bootstrap-slider.scss";
+@import "./vendor/bootstrap/bootstrap.scss";
+@import "./vendor/font-awesome/fontawesome.scss";
+@import "./vendor/font-awesome/brands.scss";
+@import "./vendor/font-awesome/regular.scss";
+@import "./vendor/font-awesome/solid.scss";
+@import "./vendor/bootstrap-slider/bootstrap-slider.scss";
 
 @import "./components";
 @import "./layout";
@@ -13,4 +13,5 @@
 @import "./landing-page/index";
 @import "./registration/index";
 @import "./profile/index";
+@import "./profile-edit/index";
 @import "./catalog/index";
