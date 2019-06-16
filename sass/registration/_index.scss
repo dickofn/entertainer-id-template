@@ -3,7 +3,7 @@ body.registration-body {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: auto 100vh;
-  padding-top: 86px;
+  padding-top: 30px;
 
   @include media-breakpoint-down(sm) {
     padding-top: 0;
@@ -14,6 +14,12 @@ body.registration-body {
   .base-container {
     @include media-breakpoint-down(sm) {
       max-width: 100%;
+    }
+
+    & > .row {
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -34,7 +40,7 @@ body.registration-body {
       border-radius: 0;
       box-shadow: none;
       background-color: rgba(#fff, 0.95);
-      min-height: 100vh;
+      min-height: 100%;
     }
   }
 
