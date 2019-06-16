@@ -1,6 +1,6 @@
 $(".chips").chips();
 $(".chips-placeholder").chips({
-  placeholder: "Enter Categories",
+  placeholder: "Enter Genres",
   secondaryPlaceholder: "+Tag"
 });
 $(".chips-autocomplete").chips({
